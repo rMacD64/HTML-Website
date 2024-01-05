@@ -1,7 +1,6 @@
-function formMaker() {
-  const sudukoForm = document.createElement("form");
-  sudukoForm.id = "suduko";
-
+function formMaker(formID) {
+  sudukoForm = document.getElementById(formID);
+  
   for (let i = 0; i < 9; i++) {
     let inbox = document.createElement("input");
     inbox.id = "box" + i;
@@ -11,6 +10,4 @@ function formMaker() {
     inbox.setAttribute("min", 0);
     sudukoForm.appendChild(inbox);
   }
-
-  return sudukoForm;
 }

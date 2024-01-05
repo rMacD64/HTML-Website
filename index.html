@@ -1,20 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" href="global/css/table.css">
-<link rel="icon" type="image/x-icon" href="resources/images/favicon.ico">
-<script src=".vscode/form.js"></script>
+    <link rel="icon" type="image/x-icon" href="resources/images/favicon.ico">
+    <link rel="stylesheet" href="global/css/form.css">
+    <script src=".vscode/form.js"></script>
 </head>
 <body>
 
-<h2>Suduko Solver</h2>
-<p id="par">Fill in the Suduko table below with
-    the elements you know, leave the rest blank
-    and click the Solve button when you are ready.
-</p>
-<div class="table-layout">
-    
-</div>
+    <h2>Suduko Solver</h2>
+    <p id="par">Fill in the Suduko table below with
+        the elements you know, leave the rest blank
+        and click the Solve button when you are ready.
+    </p>
+    <div class="table-layout">
+        <form id="sudukoForm"></form>
+    </div>
+    <input type="submit" value="Submit" onload="formMaker('sudukoForm')" form="sudukoForm">
 
 </body>
 </html>
