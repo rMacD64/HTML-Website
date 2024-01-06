@@ -1,6 +1,7 @@
 /*
   Creates the suduko grid made of input boxes.
   @param {string} formID - the id of the form being developed
+  @param {string} divID - the id of the grid container
 */
 function formMaker(formID, divID) {
   for (let row = 0; row < 9; row++) {
