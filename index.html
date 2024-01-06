@@ -6,15 +6,16 @@
     <script src=".vscode/form.js"></script>
 </head>
 <body onload="formMaker('sudukoForm', 'outerLayer')">
-
+    
     <h2>Suduko Solver</h2>
     <p id="par">
         Fill in the Suduko table below with
         the elements you know, leave the rest blank
         and click the Solve button when you are ready.
     </p>
-
-    <div class="grid-container" id="outerLayer"><form id="sudukoForm"></form></div>
+    <form id="sudukoForm"></form>
+    <div class="grid-container" id="outerLayer"></div>
+    <br>
     <input type="submit" value="Submit" form="sudukoForm">
 
 </body>
