@@ -1,4 +1,4 @@
 .table-layout {
     display: -ms-inline-grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: repeat(9, auto);
 }

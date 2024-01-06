@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="global/css/form.css">
     <script src=".vscode/form.js"></script>
 </head>
-<body>
+<body onload="formMaker('sudukoForm')">
 
     <h2>Suduko Solver</h2>
     <p id="par">Fill in the Suduko table below with
@@ -15,7 +15,7 @@
     <div class="table-layout">
         <form id="sudukoForm"></form>
     </div>
-    <input type="submit" value="Submit" onload="formMaker('sudukoForm')" form="sudukoForm">
+    <input type="submit" value="Submit" form="sudukoForm">
 
 </body>
 </html>
