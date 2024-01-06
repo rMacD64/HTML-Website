@@ -3,18 +3,18 @@ function solve() {
 }
 
 /*
-    Organizes input data in a usable array.
+    Organizes input data in a usable grid array.
 */
 function inputParser() {
     const grid = new Array(9);
-    for (let col = 0; col < 9; col++) {
-        column = new Array(9);
-        for (let row = 0; row < 9; row++) {
-            column[row] = document.getElementById(row + "-" + col).value;
+    for (let row = 0; row < 9; row++) {
+        curRow = new Array(9);
+        for (let col = 0; col < 9; col++) {
+            curRow[col] = document.getElementById(row + "-" + col).value;
         }
-        grid[col] = column;
+        grid[row] = curRow;
     }
-    
+
     window.alert(grid);
 }
 
