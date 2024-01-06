@@ -7,7 +7,7 @@ function formMaker(formID, divID) {
   for (let row = 0; row < 9; row++) {
     for (let col = 0; col < 9; col++) {
       let divi = document.createElement("div");
-      inputBox(row, col, formID);
+      document.divi.appendChild(inputBox(row, col, formID));
       document.getElementById(divID).appendChild(divi);
     }
   }
@@ -27,4 +27,6 @@ function inputBox(row, col, formID) {
   inbox.setAttribute("max", 9);
   inbox.setAttribute("min", 1);
   inbox.setAttribute("form", formID);
+
+  return inbox;
 }
