@@ -7,14 +7,14 @@ function solve() {
 */
 function inputParser() {
     const grid = new Array(9);
-
     for (let col = 0; col < 9; col++) {
         column = new Array(9);
         for (let row = 0; row < 9; row++) {
             column[row] = document.getElementById(row + "-" + col).value;
         }
+        grid[col] = column;
     }
-
+    
     window.alert(grid);
 }
 
