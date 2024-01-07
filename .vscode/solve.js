@@ -1,8 +1,8 @@
-let potentials = new Array(9)
-const grid = new Array(9);
-const colList = new Array(9);
-const cubeList = new Array(9);
-let unfound = new Set();
+let potentials = new Array(9) // An array of the potential numbers in each box
+const grid = new Array(9); // List of rows. Most representative form of the grid.
+const colList = new Array(9); // List of each column
+const cubeList = new Array(9); // List of each 3x3 box
+let unfound = new Set(); // Set of all numbers which have not all been found
 
 function solve() {
     for (let row = 0; row < 9; row++) {
@@ -17,7 +17,9 @@ function solve() {
 }
 
 function checker() {
+    for (x in unfound) {
 
+    }
 }
 
 /*
